@@ -3,12 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:happy_notes/happy_notes.dart';
 import 'package:temenin_isoman_mobileapp/common/styles.dart';
 import 'package:temenin_isoman_mobileapp/screens/home_screen.dart';
-
-import 'package:checklist/main.dart';
 import 'package:tips_and_tricks/main.dart';
 import 'package:bed_capacity/main.dart';
-import 'package:emergency_contact/main.dart';
-import 'package:obat/obat.dart';
 
 Widget category(BuildContext context) {
   return Column(
@@ -57,7 +53,7 @@ Widget category(BuildContext context) {
               Icons.checklist,
               const Color(0xfffa8c73),
               const Color(0xfffa9881),
-              ChecklistScreen.routeName,
+              HomeScreen.routeName,
               context,
             ),
             _categoryCard(
@@ -73,7 +69,7 @@ Widget category(BuildContext context) {
               Icons.warning,
               const Color(0xfffa8c73),
               const Color(0xfffa9881),
-              ListDaerahPage.routeName,
+              HomeScreen.routeName,
               context,
             ),
             _categoryCard(
@@ -90,14 +86,6 @@ Widget category(BuildContext context) {
               const Color(0xfffa8c73),
               const Color(0xfffa9881),
               TipsAndTricksListPage.routeName,
-              context,
-            ),
-            _categoryCard(
-              "Symptomp",
-              Icons.medical_services_outlined,
-              const Color(0xfffa8c73),
-              const Color(0xfffa9881),
-              ObatsPage.routeName,
               context,
             ),
           ],

@@ -2,18 +2,13 @@ import 'package:deteksi_mandiri/deteksi_mandiri.dart';
 import 'package:flutter/material.dart';
 import 'package:happy_notes/happy_notes.dart';
 import 'package:http/http.dart' as http;
-
 import 'package:temenin_isoman_mobileapp/models/user.dart';
 import 'package:temenin_isoman_mobileapp/utils/session.dart';
 import 'package:temenin_isoman_mobileapp/common/styles.dart';
 import 'package:temenin_isoman_mobileapp/screens/home_screen.dart';
 import 'package:temenin_isoman_mobileapp/screens/login_screen.dart';
-
-import 'package:checklist/main.dart';
 import 'package:tips_and_tricks/main.dart';
 import 'package:bed_capacity/main.dart';
-import 'package:emergency_contact/main.dart';
-import 'package:obat/obat.dart';
 
 Widget customDrawer(BuildContext context, Future<User?> futureUser) {
   void logout() async {
@@ -75,6 +70,7 @@ Widget customDrawer(BuildContext context, Future<User?> futureUser) {
         Container(
           height: 20,
         ),
+
         _drawerTile(
           context,
           "Home Page",
@@ -91,7 +87,7 @@ Widget customDrawer(BuildContext context, Future<User?> futureUser) {
           context,
           "Checklist",
           Icons.checklist,
-          ChecklistScreen.routeName,
+          HomeScreen.routeName,
         ),
         _drawerTile(
           context,
@@ -103,7 +99,7 @@ Widget customDrawer(BuildContext context, Future<User?> futureUser) {
           context,
           "Emergency Contact",
           Icons.warning,
-          ListDaerahPage.routeName,
+          HomeScreen.routeName,
         ),
         _drawerTile(
           context,
@@ -116,12 +112,6 @@ Widget customDrawer(BuildContext context, Future<User?> futureUser) {
           "Tips And Tricks",
           Icons.lightbulb_outline,
           TipsAndTricksListPage.routeName,
-        ),
-        _drawerTile(
-          context,
-          "Symptomp",
-          Icons.medical_services_outlined,
-          ObatsPage.routeName,
         ),
         Container(
           height: 20,

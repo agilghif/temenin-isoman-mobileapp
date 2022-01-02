@@ -76,12 +76,6 @@ Widget memberCard(BuildContext context) {
               "Sabyna Maharani",
               " Tips And Tricks",
             ),
-            _memberTile(
-              context,
-              "https://csui2020.github.io/static/img/buku_angkatan/FH50.jpg",
-              "Stephanus Dario",
-              "Symptomp",
-            ),
             const SizedBox(
               height: 10,
             ),
